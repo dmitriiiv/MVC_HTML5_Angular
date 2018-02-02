@@ -6,7 +6,7 @@
 
 <html>
     <head>
-        <title>Prod Javastudy.ru MVC_HTML5_ANGULAR</title>
+        <title>Dev Javastudy.ru MVC_HTML5_ANGULAR</title>
         <spring:url value="/resources/css/bootstrap.min.css" var="bootstrap"/>
         <spring:url value="/resources/css/modern-business.css" var="startertemplate"/>
         <spring:url value="/resources/font-awesome/css/font-awesome.min.css" var="fontawesome"/>
