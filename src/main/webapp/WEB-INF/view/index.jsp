@@ -1,108 +1,14 @@
 <!DOCTYPE html>
-
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="page" tagdir="/WEB-INF/tags" %>
 
-<html>
-    <head>
-        <title>Dev Javastudy.ru MVC_HTML5_ANGULAR</title>
-        <spring:url value="/resources/css/bootstrap.min.css" var="bootstrap"/>
-        <spring:url value="/resources/css/modern-business.css" var="startertemplate"/>
-        <spring:url value="/resources/font-awesome/css/font-awesome.min.css" var="fontawesome"/>
-        <spring:url value="/resources/js/jquery.js" var="jquery"/>
-        <spring:url value="/resources/js/bootstrap.min.js" var="bootstrapjs"/>
-        <link href="${bootstrap}" rel="stylesheet"/>
-        <link href="${startertemplate}" rel="stylesheet"/>
-        <link href="${fontawesome}" rel="stylesheet" type="text/css"/>
-    </head>
+<page:template>
 
-    <body>
-        <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-                        <li>
-                            <a href="services.html">Lessons</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorial<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="portfolio-1-col.html">Lesson 1</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-2-col.html">Lesson 2</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-3-col.html">Lesson 3</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-4-col.html">Lesson 5</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-item.html">Lesson 5</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="blog-home-1.html">Blog Home 1</a>
-                                </li>
-                                <li>
-                                    <a href="blog-home-2.html">Blog Home 2</a>
-                                </li>
-                                <li>
-                                    <a href="blog-post.html">Blog Post</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Other Pages <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="full-width.html">Full Width Page</a>
-                                </li>
-                                <li>
-                                    <a href="sidebar.html">Sidebar Page</a>
-                                </li>
-                                <li>
-                                    <a href="faq.html">FAQ</a>
-                                </li>
-                                <li>
-                                    <a href="404.html">404</a>
-                                </li>
-                                <li>
-                                    <a href="pricing.html">Pricing Table</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </nav>
+    <jsp:attribute name="title">Dev MVC with HTML5, AngularJS and Bootstrap</jsp:attribute>
+
+    <jsp:body>
 
         <!-- Header Carousel -->
         <header id="myCarousel" class="carousel slide">
@@ -116,21 +22,21 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item">
-                    <div class="fill" style="background-image:url('http://placehold.it/1900x1080&amp;text=Slide One');"></div>
+                    <div class="fill" style="background-image:url('${pageContext.request.contextPath}/resources/images/indexImage1.png');"></div>
                     <div class="carousel-caption">
-                        <h2>Caption 1</h2>
+                        <h2>1</h2>
                     </div>
                 </div>
                 <div class="item active">
-                    <div class="fill" style="background-image:url('http://placehold.it/1900x1080&amp;text=Slide Two');"></div>
+                    <div class="fill" style="background-image:url('${pageContext.request.contextPath}/resources/images/indexImage1.png');"></div>
                     <div class="carousel-caption">
-                        <h2>Caption 2</h2>
+                        <h2>2</h2>
                     </div>
                 </div>
                 <div class="item">
-                    <div class="fill" style="background-image:url('http://placehold.it/1900x1080&amp;text=Slide Three');"></div>
+                    <div class="fill" style="background-image:url('${pageContext.request.contextPath}/resources/images/indexImage1.png');"></div>
                     <div class="carousel-caption">
-                        <h2>Caption 3</h2>
+                        <h2>3</h2>
                     </div>
                 </div>
             </div>
@@ -151,7 +57,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">
-                        Welcome to Modern Business
+                        Изучение Spring MVC + HTML5 + AngularJS + Bootstrap
                     </h1>
                 </div>
                 <div class="col-md-4">
@@ -267,22 +173,8 @@
 
             <hr>
 
-            <!-- Footer -->
-            <footer>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>Copyright © Your Website 2014</p>
-                    </div>
-                </div>
-            </footer>
         </div>
         <!-- /.container -->
-
-        <!-- jQuery -->
-        <script src="${jquery}"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="${bootstrapjs}"></script>
 
         <!-- Script to Activate the Carousel -->
         <script>
@@ -290,5 +182,5 @@
                 interval: 5000 //changes the speed
             })
         </script>
-    </body>
-</html>
+    </jsp:body>
+</page:template>
