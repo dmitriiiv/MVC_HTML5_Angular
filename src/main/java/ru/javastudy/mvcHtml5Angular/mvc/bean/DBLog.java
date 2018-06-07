@@ -26,9 +26,9 @@ public class DBLog implements Serializable {
 
     @Override
     public String toString() {
-        return "DBLog[" +
+        return "DBLog{" +
                 "logString='" + logString + '\'' +
                 ", idLog=" + idLog +
-                ']';
+                '}';
     }
 }

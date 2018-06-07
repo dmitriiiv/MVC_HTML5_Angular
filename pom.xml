@@ -30,6 +30,9 @@
     <!-- Logging -->
     <logback.version>1.0.13</logback.version>
     <slf4j.version>1.7.13</slf4j.version>
+    <!-- Mail Dependency -->
+    <javax.mail.version>1.4.7</javax.mail.version>
+    <velocity.version>1.7</velocity.version>
   </properties>
 
   <dependencyManagement>
@@ -123,6 +126,22 @@
       <artifactId>slf4j-api</artifactId>
       <version>${slf4j.version}</version>
       <scope>compile</scope>
+    </dependency>
+    <!--Contains org.springframework.mail.javamail-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context-support</artifactId>
+    </dependency>
+    <!-- Spring MVC Mail Related Dependency -->
+    <dependency>
+      <groupId>javax.mail</groupId>
+      <artifactId>mail</artifactId>
+      <version>${javax.mail.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.velocity</groupId>
+      <artifactId>velocity</artifactId>
+      <version>${velocity.version}</version>
     </dependency>
   </dependencies>
 

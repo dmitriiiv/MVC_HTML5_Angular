@@ -53,17 +53,9 @@
                                 <li>
                                     <a href="${jdbc}">JDBC c JDBCTemplates</a>
                                 </li>
+                                <c:url value="/email.html" var="email" />
                                 <li>
-                                    <a href="portfolio-2-col.html">Lesson 2</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-3-col.html">Lesson 3</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-4-col.html">Lesson 4</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-item.html">Lesson 5</a>
+                                    <a href="${email}">Работа с Java Mail API</a>
                                 </li>
                             </ul>
                         </li>

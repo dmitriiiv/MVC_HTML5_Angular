@@ -44,11 +44,11 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return "User[" +
+        return "User{" +
                 "userName='" + userName + '\'' +
                 ", idUser=" + idUser +
                 ", password='" + password + '\'' +
                 ", enabled=" + enabled +
-                ']';
+                '}';
     }
 }
