@@ -13,8 +13,7 @@ import java.io.*;
 public class FileUploadController {
 
     @RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
-    public @ResponseBody
-    String handleFileUpload(@RequestParam("file") MultipartFile file) {
+    public @ResponseBody String handleFileUpload(@RequestParam("file") MultipartFile file) {
         if (!file.isEmpty()) {
             try {
                 System.out.println("File size = " + file.getSize());
