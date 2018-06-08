@@ -1,13 +1,28 @@
 package ru.javastudy.mvcHtml5Angular.mvc.bean;
 
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.io.Serializable;
 
+@Entity
+@Table
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
+    @NotNull
+    @Size(min = 5, max = 20)
+    @Column(name = "USERNAME")
     private String userName;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "IDUSER")
     private int idUser;
+    @NotNull
+    @Size(min=5, max = 20)
+    @Column(name = "PASSWORD")
     private String password;
+    @Column(name = "ENABLED")
     private boolean enabled;
 
     public void setUserName(String userName) {

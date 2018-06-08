@@ -33,6 +33,11 @@
     <!-- Mail Dependency -->
     <javax.mail.version>1.4.7</javax.mail.version>
     <velocity.version>1.7</velocity.version>
+    <!-- Hibernate / JPA -->
+    <hibernate.version>5.0.1.Final</hibernate.version>
+    <hibernate-validator.version>5.1.0.Final</hibernate-validator.version>
+    <!-- Spring Data -->
+    <spring-framework.data.version>1.9.1.RELEASE</spring-framework.data.version>
   </properties>
 
   <dependencyManagement>
@@ -142,6 +147,24 @@
       <groupId>org.apache.velocity</groupId>
       <artifactId>velocity</artifactId>
       <version>${velocity.version}</version>
+    </dependency>
+    <!--Hibernate ORM-->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+      <version>${hibernate.version}</version>
+    </dependency>
+    <!--Hibernate validator (contains @NotEmpty)-->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-validator</artifactId>
+      <version>${hibernate-validator.version}</version>
+    </dependency>
+    <!--Spring Data-->
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-jpa</artifactId>
+      <version>${spring-framework.data.version}</version>
     </dependency>
   </dependencies>
 

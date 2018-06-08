@@ -57,6 +57,10 @@
                                 <li>
                                     <a href="${email}">Работа с Java Mail API</a>
                                 </li>
+                                <c:url value="/orm.html" var="orm" />
+                                <li>
+                                    <a href="${orm}">Работа с Hibernate</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
